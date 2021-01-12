@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword js + canvas</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        canvas {
+            width: 500px;
+            /*     border: 1px solid black; */
+            margin-top: 5rem;
+            background: transparent;
+            padding: 0;
+            box-shadow: 0px 5px 20px -5px;
+            display: inline-block;
+        }
+
+        .heart {
+            color: red;
+            font-size: 30px;
+        }
+
+        a {
+            color: skyblue;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 24px;
+            letter-spacing: 3px;
+            border: 1px solid;
+            padding: 3px;
+        }
+
+        a:hover {
+            background: skyblue;
+            color: #fff;
+        }
+
+        #show__words {
+            border: none;
+            outline: none;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #fff;
+            background: skyblue;
+            box-shadow: 0px 0px 10px -5px skyblue;
+            margin-top: 20px;
+            border: 1px solid skyblue;
+            display: inline-block;
+        }
+
+        #show__words:hover,
+        #show__words:active {
+            color: skyblue;
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button id="show__words">show words</button>
+    </div>
+    <canvas id="canvas" height="1000" width="1000"></canvas>
+    <p><a href="https://www.instagram.com/gudziboy/">Made with <span class="heart">♥</span> by Sergey Gudzenko</a></p>
+
+<script src="crossword.js"></script>
+</body>
+
+</html>
